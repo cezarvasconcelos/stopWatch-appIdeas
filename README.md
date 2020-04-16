@@ -1,5 +1,5 @@
 # stopWatch-appIdeas
-Cronometro criado como um projeto para aprimorar conhecimentos.
+<a href="index.html">Cronometro</a> criado como um projeto para aprimorar conhecimentos.
 
 Utilizando HTML,CSS e JavaScript
 
