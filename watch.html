@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cronometro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="tempo">
+            <div id="cronometro">
+                <div id="numeros">
+                    <div class="number" id="hour">00</div>:<div class="number" id="minute">00</div>:<div class="number"
+                        id="second">00</div>.<div class="number" id="milisecond">00</div>
+                </div>
+
+            </div>
+
+
+            <div id="botoes">
+                <button onclick="start()" class="btn" id="start">START</button>
+                <button onclick="stopTimer()" class="btn">STOP</button>
+            </div>
+        </div>
+
+        <div id="laps">
+            <h1>LAP TIMES</h1>
+            <table id="lap-times"> 
+                <tr></tr>
+            </table>
+        </div>
+        
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
