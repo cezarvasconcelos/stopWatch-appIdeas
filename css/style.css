@@ -27,9 +27,7 @@ body {
 
 .tempo{
     border-radius: 20px;
-    /* background: rgba(3,94,232,0.9); */
     background: rgba(151,0,204,0.8);
-    /* border: 2px solid; */
     width: 510px;
     height: 200px;
     margin: auto;
@@ -45,12 +43,10 @@ body {
     font-size: 100px;
     font-family:'digital-7-font';
     font-weight: bold;
-    /* border: 2px solid red; */
     color: rgb(45,226,230);
 
 }
 .number{
-    /* border: 2px solid lime; */
     display: inline-block;
     min-width: 0.99em; 
     justify-content: center;
@@ -62,7 +58,6 @@ body {
 
 #botoes {
     width: 450px;
-    /* border: 2px solid; */
     padding: 10px 30px;
     text-align: center;
    
@@ -80,7 +75,6 @@ body {
     border-radius: 30px;
     text-decoration: none;
     display: inline-block;
-    /* border: 2px solid #5070b1; */
     cursor: pointer;
     color: rgb(3,94,232);
     transition-duration: 0.4s;
@@ -94,18 +88,15 @@ body {
 #laps{
     visibility: hidden;
     width: 510px;
-    /* font-family:'digital-7-font'; */
     margin-top: 20px;
     text-align: center;
     background: rgba(151,0,204,0.5);
-    /* background: green; */
     border-radius: 10px;
 }
 
 #laps h1{
     font-family: 'Exo 2', sans-serif;
     margin-bottom: 10px;
-    /* color: white; */
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 
 }

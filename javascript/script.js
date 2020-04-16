@@ -4,6 +4,7 @@ var minute = 0;
 var second = 0;
 var milisecond = 0;
 var reseta = false;
+var startStop = false; // falso quando não startou 
 var botaoReseta;
 var botaoLap;
 var hourDOM = document.getElementById("hour");
@@ -16,7 +17,20 @@ var contaLap = 0;
 
 //Inicia cronometro, e se não existe, cria o botão Lap
 
+function boraLa() {
+    if(!startStop){
+        start();
+        document.getElementById("start-stop").innerHTML = 'STOP'
+    }else{
+        stopTimer();
+        document.getElementById("start-stop").innerHTML = 'START'
+    }
+}
+
+
+
 function start() {
+    startStop = true;
     clearInterval(clock)
     clock = setInterval(timer, 10)
     if (botaoLap === undefined) {
@@ -60,6 +74,7 @@ function timer() {
 }
 
 function stopTimer() {
+    startStop = false;
     clearInterval(clock)
 
     if (botaoReseta === undefined && clock !== undefined) {
