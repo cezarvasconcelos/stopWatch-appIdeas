@@ -28,7 +28,7 @@ function boraLa() {
 }
 
 
-
+// starta e cria o botão LAP
 function start() {
     startStop = true;
     clearInterval(clock)
@@ -63,7 +63,8 @@ function timer() {
     }
     
     currentTime= testNumber(hour,minute,second,milisecond)
-       
+    
+    //mostra no visor
     hourDOM.innerHTML = currentTime[0];
     minuteDOM.innerHTML = currentTime[1]
     secondDOM.innerHTML = currentTime[2];
@@ -73,10 +74,11 @@ function timer() {
   
 }
 
+//"PARA PARA PARA PARA PARAEE PARAEEE" - Kleber, JOAO 
 function stopTimer() {
     startStop = false;
     clearInterval(clock)
-
+    //cria botão reset se n existe e se clock já foi definido
     if (botaoReseta === undefined && clock !== undefined) {
         botaoReseta = document.createElement('button')
         botaoReseta.className = "btn"
@@ -86,6 +88,7 @@ function stopTimer() {
         document.getElementById("botoes").appendChild(botaoReseta)
     }
 
+    //zera tudo e esconde a div das laps
     function reset() {
         contaLap = 0
         hour = 0;
@@ -96,12 +99,13 @@ function stopTimer() {
         secondDOM.innerHTML = "00"
         milisecond = 0;
         milisecondDOM.innerHTML = "00"
-        document.getElementById("start").innerHTML = "START"
         document.getElementById("lap-times").innerHTML = ""
         document.getElementById("laps").style = "visibility: hidden;"
     }
 }
 
+
+//deixa a lap visivel e vai mostrando as paradinhas
 function lap() {
     document.getElementById("laps").style = "visibility: visible;"
     contaLap++
@@ -111,7 +115,7 @@ function lap() {
     document.getElementById("lap-times").appendChild(tempo);
 }
 
-
+//coloca o 0 na frente do digito pra ficar batuta visualmente
 function testNumber(hour,minute,second,milisecond) {
     let number = [hour,minute,second,milisecond];
 
