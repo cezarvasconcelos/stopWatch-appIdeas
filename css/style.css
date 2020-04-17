@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Exo 2', sans-serif;
-    background: lightgray url(../images/bg.jpg) center top ;
+    background: rgba(34, 39, 69) /*url(../images/bg.jpg) center top ; */
   
 }
 
