@@ -1,6 +1,8 @@
 # stopWatch-appIdeas
 Cronometro criado como um projeto para aprimorar conhecimentos.
 
+https://cezarvasconcelos.github.io/stopWatch-appIdeas/
+
 Utilizando HTML,CSS e JavaScript
 
 
